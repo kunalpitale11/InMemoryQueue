@@ -7,7 +7,7 @@ public class Subscriber {
 		return id;
 	}
 	
-	public void sendMEssage(Message message) {
+	public void sendMessage(Message message) {
 		
 	}
 	

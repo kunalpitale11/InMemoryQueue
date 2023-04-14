@@ -8,7 +8,7 @@ public class Subscription {
 	public Subscription(Topic topic, Integer lastOffset, Subscriber subscriber) {
 		super();
 		this.topic = topic;
-		if (lastOffset == null)
+		if(lastOffset == null)
 			lastOffset = 0;
 		else
 			this.lastOffset = lastOffset;
@@ -58,6 +58,10 @@ public class Subscription {
 	public void incrementOffset() {
 		lastOffset+=1;
 		
+	}
+
+	public void sendMessage(Message message) {
+		subscriber.sendMessage(message);		
 	}
 
 	
